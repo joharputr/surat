@@ -14,8 +14,10 @@
 
 <body>
 <div class="jumbotron text-center">
-  <h1>Aplikasi Web Service</h1>
-  <p>Menggunakan REST</p>
+  <h1>Badan Meterologi Klimatologi dan Geofisika <br>
+  Stasiun Klimatologi Kelas IV Mlati</h1>
+  <p>Jl. Kabupaten Km. 5.5 Duwet Sendangadi Mlati Sleman D.I.Yogyakarta <br>
+    Telepon : (0274) 2880151/2880152 Fax : (0274) 2880151 Kode Pos 55285 <br> Email : staklim.yogya@gmail.com</p>
 </div>
 <div class="container">
     <div class="row">
@@ -51,12 +53,21 @@
               <table id="datatable" class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th style="width: 5%; text-align: center;">No</th>
-                    <th style="width: 30%; text-align: center;">Nama</th>
-                    <th style="width: 20%; text-align: center;">Tipe</th>
-                    <th style="width: 15%; text-align: center;">Harga</th>
-                    <th style="width: 15%; text-align: center;">Stok</th>
-                    <th style="width: 15%; text-align: center;">Aksi</th>
+                    <th style="width: 3%; text-align: center;">No Agenda </th>
+                    <th style="width: 3%; text-align: center;">Tanggal Diterima</th>
+                    <th style="width: 3%; text-align: center;">Kode Arsip</th>
+                    <th style="width: 3%; text-align: center;">No Surat</th>
+                    <th style="width: 3%; text-align: center;">Tanggal Surat</th>
+                    <th style="width: 3%; text-align: center;">Pengirim</th>
+                    <th style="width: 3%; text-align: center;">Perihal</th>
+                    <th style="width: 3%; text-align: center;">Lampiran</th>
+                    <th style="width: 3%; text-align: center;">Sifat Surat</th>
+                    <th style="width: 3%; text-align: center;">Pejabat Pendisposisi</th>
+                    <th style="width: 3%; text-align: center;">Disposisi </th>
+                    <th style="width: 3%; text-align: center;">Ket Surat</th>
+                    <th style="width: 3%; text-align: center;">informasi Disposisi</th>
+                    <th style="width: 3%; text-align: center;">Aksi</th>
+
                   </tr>
                 </thead>
                 <tbody>

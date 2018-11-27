@@ -12,8 +12,10 @@
 
 <body>
 <div class="jumbotron text-center">
-  <h1>Aplikasi Web Service</h1>
-  <p>Menggunakan REST</p>
+    <h1>Badan Meterologi Klimatologi dan Geofisika <br>
+  Stasiun Klimatologi Kelas IV Mlati</h1>
+  <p>Jl. Kabupaten Km. 5.5 Duwet Sendangadi Mlati Sleman D.I.Yogyakarta <br>
+    Telepon : (0274) 2880151/2880152 Fax : (0274) 2880151 Kode Pos 55285 <br> Email : staklim.yogya@gmail.com</p>
 </div>
 <div class="container">
 <div class="row">
