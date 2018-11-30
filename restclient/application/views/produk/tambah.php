@@ -90,7 +90,19 @@
                     <div class="row" style="padding-bottom: 10px;">
                         <label class="col-md-2">Disposisi</label>
                         <div class="col-md-4">
-                            <input type="number" name="stok" required="required" class="form-control col-md-8" />
+                           <select id="jenis_laporan" name="jenis_laporan" required="required" class="form-control col-md-8">
+                                <option value="kerusakan">TU</option>
+                                <option value="perbaikan">Kapok Datin</option>
+                                <option value="perbaikan">Kapok Obs</option>
+                                <option value="perbaikan">Kapok Forcaster</option>
+                                <option value="perbaikan">Kapok Teknisi</option>
+                                <option value="perbaikan">PPK</option>
+                                <option value="perbaikan">Bendahara Penerimaan</option>
+                                <option value="perbaikan">Bendahara Pengeluaran</option>
+                                <option value="perbaikan">PPABP</option>
+                                <option value="perbaikan">SAIBA</option>
+                                <option value="perbaikan">Surat Copy</option>
+                              </select>
                         </div>
                     </div>
                     <div class="row" style="padding-bottom: 10px;">
