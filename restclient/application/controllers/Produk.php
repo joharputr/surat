@@ -15,6 +15,12 @@ class Produk extends CI_Controller{
         $data['title'] = "Data Produk";
         $this->load->view('produk/data',$data);
     }
+
+      function keluar(){
+        $data['dataproduk'] = json_decode($this->curl->simple_get($this->API.'/produk'));
+        $data['title'] = "Data Produk";
+        $this->load->view('produk/keluar',$data);
+      }
     
     // tambah data produk
     function tambah(){

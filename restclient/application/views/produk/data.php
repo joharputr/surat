@@ -34,6 +34,9 @@
                 <a href="<?php echo base_url().'index.php/produk/tambah/'; ?>" class="btn btn-info" role="button">
                     <i class="fa fa-plus"></i> Tambah Data
                 </a>
+                 <a href="<?php echo base_url().'index.php/'; ?>" class="btn btn-info" role="button">
+                    <i class="fa fa-home"></i> Kembali
+                </a>
             </div>
                <div>
      <div class="col-lg-6">
@@ -50,43 +53,53 @@
              
             </div>
             <div class="table-responsive">
-              <table id="datatable" class="table table-bordered table-striped">
+              <table id="datatable" class="table table-bordered table-striped" >
                 <thead>
-                  <tr>
-                    <th style="width: 3%; text-align: center;">No Agenda </th>
-                    <th style="width: 3%; text-align: center;">Tanggal Diterima</th>
-                    <th style="width: 3%; text-align: center;">Kode Arsip</th>
-                    <th style="width: 3%; text-align: center;">No Surat</th>
-                    <th style="width: 3%; text-align: center;">Tanggal Surat</th>
-                    <th style="width: 3%; text-align: center;">Pengirim</th>
-                    <th style="width: 3%; text-align: center;">Perihal</th>
-                    <th style="width: 3%; text-align: center;">Lampiran</th>
-                    <th style="width: 3%; text-align: center;">Sifat Surat</th>
-                    <th style="width: 3%; text-align: center;">Pejabat Pendisposisi</th>
-                    <th style="width: 3%; text-align: center;">Disposisi </th>
-                    <th style="width: 3%; text-align: center;">Ket Surat</th>
-                    <th style="width: 3%; text-align: center;">informasi Disposisi</th>
-                    <th style="width: 3%; text-align: center;">Aksi</th>
-
-                  </tr>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> No Agenda </th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> Tanggal Diterima</th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> Kode Arsip</th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> No Surat</th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> Tanggal Surat</th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> Pengirim</th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> Perihal</th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> Lampiran</th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> Sifat Surat</th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> Pejabat Pendisposisi</th>
+                    <th style="  text-align: center;" colspan="11">Disposisi </th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> Surat Asli/Copy</th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> informasi Disposisi</th>
+                    <th style="  vertical-align: super; text-align: center;" rowspan="2"> <br> Aksi</th>
+                        <tr>
+                          <th style=" vertical-align: super; text-align: center;">TU</th>
+                          <th style=" vertical-align: super; text-align: center;">Kapok Datin</th>
+                          <th style=" vertical-align: super; text-align: center;">Kapok Obs</th>
+                          <th style=" vertical-align: super; text-align: center;">Kapok Forcaster</th>
+                          <th style=" vertical-align: super; text-align: center;">Kapok Teknisi</th> 
+                          <th style=" vertical-align: super; text-align: center;">PPK</th> 
+                          <th style=" vertical-align: super; text-align: center;">Bendahara Penerimaan</th> 
+                          <th style=" vertical-align: super; text-align: center;">Bendahara Pengeluaran</th> 
+                          <th style=" vertical-align: super; text-align: center;">PPABP</th> 
+                          <th style=" vertical-align: super; text-align: center;">SAIBA</th> 
+                          <th style=" vertical-align: super; text-align: center;">BMN</th> 
+                      </tr>
                 </thead>
-                <tbody>
-                  <?php if(isset($dataproduk) and $dataproduk):$i=1; foreach($dataproduk as $row): ?>
-                  <tr>
-                    <td class="text-center"><?php echo $i; ?></td>
-                    <td><?php echo $row->nama; ?></td>
-                    <td><?php echo $row->tipe; ?></td>
-                    <td><?php echo $row->harga; ?></td>
-                    <td><?php echo $row->stok; ?></td>
-                    <td class="text-center">
-                      <div class="btn-group">
-                        <a title="Ubah" class="btn btn-sm btn-default" href="<?php echo base_url().'index.php/produk/ubah/'.$row->id; ?>"><i class="fas fa-pencil-alt"></i></a>
-                        <a title="Hapus" class="btn btn-sm btn-default" href="<?php echo base_url().'index.php/produk/hapus/'.$row->id; ?>"><i class="fas fa-trash"></i></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <?php $i++; endforeach; endif; ?>
-                </tbody>
+                   <tbody>
+                    <?php if(isset($dataproduk) and $dataproduk):$i=1; foreach($dataproduk as $row): ?>
+                    <tr>
+                      <td class="text-center"><?php echo $i; ?></td>
+                      <td><?php echo $row->nama; ?></td>
+                      <td><?php echo $row->tipe; ?></td>
+                      <td><?php echo $row->harga; ?></td>
+                      <td><?php echo $row->stok; ?></td>
+                      <td class="text-center">
+                        <div class="btn-group">
+                          <a title="Ubah" class="btn btn-sm btn-default" href="<?php echo base_url().'index.php/produk/ubah/'.$row->id; ?>"><i class="fas fa-pencil-alt"></i></a>
+                          <a title="Hapus" class="btn btn-sm btn-default" href="<?php echo base_url().'index.php/produk/hapus/'.$row->id; ?>"><i class="fas fa-trash"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <?php $i++; endforeach; endif; ?>
+                  </tbody>
               </table>
             </div>
           </div>

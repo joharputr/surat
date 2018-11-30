@@ -28,25 +28,82 @@
             <div><br />
                 <form action="<?php echo base_url()."index.php/produk/tambah"; ?>" method="post" enctype="multipart/form-data">
                     <div class="row" style="padding-bottom: 10px;">
-                        <label class="col-md-2">Nama <span class="required">*</span></label>
+                        <label class="col-md-2"> No Agenda <span class="required">*</span></label>
                         <div class="col-md-4">
                             <input type="text" name="nama" required="required" class="form-control col-md-8" />
                         </div>
                     </div>
                     <div class="row" style="padding-bottom: 10px;">
-                        <label class="col-md-2">Tipe</label>
+                        <label class="col-md-2">Tanggal Diterima</label>
                         <div class="col-md-4">
-                            <input type="text" name="tipe" class="form-control col-md-8" />
+                             <input type="date" name="tgl" required="required" class="form-control col-md-8" value="<?php echo date('Y-m-d'); ?>"  />
                         </div>
                     </div>
                     <div class="row" style="padding-bottom: 10px;">
-                        <label class="col-md-2">Harga</label>
+                        <label class="col-md-2">Kode Arsip</label>
                         <div class="col-md-4">
                             <input type="number" name="harga" class="form-control col-md-8" />
                         </div>
                     </div>
                     <div class="row" style="padding-bottom: 10px;">
-                        <label class="col-md-2">Stok</label>
+                        <label class="col-md-2">No Surat</label>
+                        <div class="col-md-4">
+                            <input type="number" name="stok" required="required" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">Tanggal Surat</label>
+                        <div class="col-md-4">
+                            <input type="date" name="tgl" required="required" class="form-control col-md-8" value="<?php echo date('Y-m-d'); ?>"  />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">Pengirim</label>
+                        <div class="col-md-4">
+                            <input type="number" name="stok" required="required" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">Perihal</label>
+                        <div class="col-md-4">
+                            <textarea id = "tindakan" name="tindakan" required="required" class="form-control col-md-8"></textarea>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">Lampiran</label>
+                        <div class="col-md-4">
+                            <input type="number" name="stok" required="required" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">Sifat Surat</label>
+                        <div class="col-md-4">
+                            <input type="number" name="stok" required="required" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">Pejabat Pendisposisi</label>
+                        <div class="col-md-4">
+                            <input type="number" name="stok" required="required" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">Disposisi</label>
+                        <div class="col-md-4">
+                            <input type="number" name="stok" required="required" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">Surat Asli/Copy</label>
+                        <div class="col-md-4">
+                           <select id="jenis_laporan" name="jenis_laporan" required="required" class="form-control col-md-8">
+                                <option value="kerusakan">Surat Asli</option>
+                                <option value="perbaikan">Surat Copy</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">informasi Disposisi</label>
                         <div class="col-md-4">
                             <input type="number" name="stok" required="required" class="form-control col-md-8" />
                         </div>
